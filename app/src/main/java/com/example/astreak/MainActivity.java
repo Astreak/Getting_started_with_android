@@ -9,9 +9,18 @@ import android.view.View;
 import android.util.*;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    public void btnClick(View view){
+        EditText text=(EditText)findViewById(R.id.amount);
+        String value=text.getText().toString();
+        double D=Double.parseDouble(value);
+        double h=97*D;
+        Toast.makeText(this,"The Changed value =$"+h,Toast.LENGTH_SHORT).show();
 
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
