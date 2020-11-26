@@ -1,4 +1,4 @@
-# flutter_app
+# astreak
 
 A new Flutter application.
 
